@@ -27,8 +27,8 @@
          
           script {
             bat '''
-                    docker build -t hrtimetracker .
-                    docker rm -f hrtimetracker
+                    docker build -t hrtimetracker01 .
+                    
                 
                 '''
             
@@ -48,7 +48,7 @@
                 script {
             bat '''
                     
-                    docker run -it --name hrtimetracker -p 4444:80 -d hrtimetracker
+                    docker run -it --name hrtimetracker01 -p 4444:80 -d hrtimetracker01
                 '''
             
               }
